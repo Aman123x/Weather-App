@@ -42,10 +42,9 @@ section {
 }
 
 #locat1 p {
-  text-align: center;
   color: #fff;
   text-align: left;
-  font-size: 26px;
+  font-size: 1.7rem;
   font-weight: 700;
   padding: 20px;
   margin: 0 auto;
@@ -53,17 +52,16 @@ section {
 }
 
 #locat2 {
-  width: 430px;
+  width: 380px;
   height: 87px;
   border-radius: 10px;
   background: #270846;
 }
 
 #locat2 p {
-  text-align: center;
   color: #fff;
   text-align: left;
-  font-size: 26px;
+  font-size: 1.7em;
   font-weight: 700;
   padding: 20px;
   margin: 0 auto;
@@ -103,4 +101,62 @@ section {
   font-weight: 700;
   margin-inline: 1rem;
   letter-spacing: 1.5px;
+  margin-bottom:20px ;
+}
+
+@media screen and (max-width:770px) {
+  section{
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  #locat{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .bottom{
+    padding-left: 20px;
+  }
+
+  .bottom-down{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width:450px) {
+  section{
+    padding-left: 20px;
+    padding-right: 15px;
+  }
+
+  #locat1{
+    width:100%;
+    height:80%;
+  }
+
+  #locat1 p{
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+
+  #locat2{
+    width:100%;
+    height:80%;
+  }
+
+  #locat2 p{
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+
+  .bottom{
+    padding-left: 10px;
+  }
+
+  .bottom h1{
+    text-align: center;
+  }
+
 }

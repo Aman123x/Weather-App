@@ -47,7 +47,7 @@ async function fetchWeatherData(lat, lon) {
     }
     const data = await response.json();
 
-    console.log(data);
+    // console.log(data);
     // console.log(data.name);
     // console.log(data.wind.speed);
     // console.log(data.main.humidity);
@@ -86,19 +86,19 @@ async function fetchWeatherData(lat, lon) {
     const pressure = data.main.pressure / 1013.25;
 
     bottomDown.innerHTML = `
-        <div>
+        <div class="btn-cls">
             <button class="btn">Location: ${data.name}</button>
             <button class="btn">Wind Speed: ${windSpeedKMH.toFixed(
               2
             )} km/h </button>
             <button class="btn">Humidity : ${data.main.humidity}</button>
         </div>
-        <div>
+        <div class="btn-cls">
         <button class="btn">Time Zone : GMT +5:30</button>
             <button class="btn">Pressure: ${pressure.toFixed(2)} atm</button>
             <button class="btn">Wind Direction: ${windDirectionCardinal}</button>
         </div>
-        <div>
+        <div class="btn-cls">
             <button class="btn">UV Index : 500</button>
             <button class="btn">Feels like: ${feelsLikeCelsius.toFixed(
               2
